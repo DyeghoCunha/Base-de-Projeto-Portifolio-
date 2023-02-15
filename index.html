@@ -27,11 +27,29 @@
 
                     var alturaEu = 2;
                     var alturaLu =1.67;
+                    // var alturaPrompt = prompt("Qual sua Altura")
+                    // var pesoPrompt = prompt("Qual seu Peso");
+                    // var imcPrompt = calculaImc(pesoPrompt,alturaPrompt)
+                    // var imcPprompt = obesidade(imcPrompt);
+                    // mostra("O seu IMC é " + Math.round(imcPrompt)+ " e está com " + imcPprompt+".<br>");
 
                     var pesoEu = 95;
                     var pesoLu = 67;
                     
+                    var imcEu = calculaImc(pesoEu,alturaEu);
+                    var imcLu = calculaImc(pesoLu,alturaLu);
+
+                    var imcPeu = obesidade(imcEu);
+                    var imcPlu = obesidade(imcLu);
+
+                    mostra("Meu IMC é " + Math.round(imcEu) + " e está com " + imcPeu +".<br>");
                     
+                    mostra("IMC da Lulu é " + Math.round(imcLu)+ " e está com " + imcPlu+".<br>");
+                    
+                    mostra("---------------------------------------------------------------");
+
+                    
+
                     function mostra(escrito){
 
                         document.write(escrito)
@@ -39,47 +57,47 @@
                     }
 
                     function calculaImc(peso,altura){
-                        var  imc = peso / (altura*altura);
+                        return  imc = peso / (altura*altura);
+                        // return imc;
+                    }                   
+
+                    function obesidade(imct){
+                        
                        
-                        if(imc < 20)
+                        if(imct < 20)
                         {
-                            mostra("Você esta abaixo do peso!");
+                            return ("Você esta abaixo do peso!");
                         } 
-                        else if(imc >20 && imc <= 25)
+                        else if(imct >20 && imct <= 25)
                         {
-                            mostra("Peso Ideal");
+                            return ("Peso Ideal");
                         }
-                        else if(imc >25 && imc <= 30)
+                        else if(imct >25 && imct <= 30)
                         {
-                            mostra("Sobrepeso");
+                            return("Sobrepeso");
                         }
-                        else if(imc >30 && imc <= 35)
+                        else if(imct >30 && imct <= 35)
                         {
-                            mostra("Obesidade Moderada");
+                             return("Obesidade Moderada");
                         }
-                        else if(imc >35 && imc <= 40)
+                        else if(imct >35 && imct <= 40)
                         {
-                            mostra("Obesidade Severa");
+                             return("Obesidade Severa");
                         }
-                        else if(imc >40 && imc <= 50)
+                        else if(imct >40 && imct <= 50)
                         {
-                            mostra("Obesidade Morbida");
+                             return("Obesidade Morbida");
                         }
                         else
                         {
-                            mostra('Gordo');
+                             return('Gordo');
                         }
     	
                         
 
-                        mostra("Seu IMC é " + Math.round(imc) +".<br>");                     
+                                            
                     }
 
-                    calculaImc(pesoEu,alturaEu);
-                    calculaImc(pesoLu,alturaLu);
-                    
-                    
-            
                 </script>
 
             </section>
@@ -88,7 +106,7 @@
                 <div class="color"></div>
                 <div class="color"></div>
                 <div class="color"></div>
-                <div class="color"></div>
+                
                 <!-- <video autoplay loop poster="./fundo.png" class="fundo">
                 <source src="./teste.mp4" type="video/mp4"> -->
                 </video>
@@ -106,50 +124,4 @@
         </main>
         <script src="./java.js"></script>
 </body>
-
-
-
-
-<!-- 
-<body class="body">
-    <h1 class="titulo">Cálculo de IMC</h1>
-    
-
-    <section class="javaScript">
-
-    <script>
-
-        function pulaLinha(){
-            
-            document.write("<br>");
-        }    
-        
-        function mostra(frase){
-            document.write(frase);
-            pulaLinha();
-        }
-
-
-        document.write ("Eu tenho "+ (2023-1987)+ " anos")
-        
-        pulaLinha();
-
-        document.write ("A Lulu tem "+ (2023-1982)+ " anos")
-        pulaLinha();
-
-        mostra("------------------------------------------------------------------------")
-
-        mostra("A Lulu tem "+ (2023-1982)+ " anos");
-        
-
-        mostra("Eu tenho "+ (2023-1987)+ " anos");
-        
-        
-
-     </script>
-    </section>
-
-    
-    
-</body> -->
 </html>
