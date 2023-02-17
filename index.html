@@ -13,92 +13,19 @@
         <main class="meusBotoesDeContato">
 
             <header class="cabecalho">
-                <h1 class="cabecalho__nome">JavaScript Calculo de IMC</h1>
+                <h1 class="cabecalho__nome">JavaScript</h1>
                 <h1 class="cabecalho__nome">Dyegho Moraes Costa Gama Cunha</h1>
-                
-
             </header>
 
             <section class="javaScript">
-                <script>
+                
+                <canvas class="canvas" width = "" height=""></canvas>           
+               
+                 <script>    
 
-                    var altura ;
-                    var peso ;
-
-                    var alturaEu = 2;
-                    var alturaLu =1.67;
-                    // var alturaPrompt = prompt("Qual sua Altura")
-                    // var pesoPrompt = prompt("Qual seu Peso");
-                    // var imcPrompt = calculaImc(pesoPrompt,alturaPrompt)
-                    // var imcPprompt = obesidade(imcPrompt);
-                    // mostra("O seu IMC é " + Math.round(imcPrompt)+ " e está com " + imcPprompt+".<br>");
-
-                    var pesoEu = 95;
-                    var pesoLu = 67;
+                   
                     
-                    var imcEu = calculaImc(pesoEu,alturaEu);
-                    var imcLu = calculaImc(pesoLu,alturaLu);
-
-                    var imcPeu = obesidade(imcEu);
-                    var imcPlu = obesidade(imcLu);
-
-                    mostra("Meu IMC é " + Math.round(imcEu) + " e está com " + imcPeu +".<br>");
-                    
-                    mostra("IMC da Lulu é " + Math.round(imcLu)+ " e está com " + imcPlu+".<br>");
-                    
-                    mostra("---------------------------------------------------------------");
-
-                    
-
-                    function mostra(escrito){
-
-                        document.write(escrito)
-                        document.write("<br>")
-                    }
-
-                    function calculaImc(peso,altura){
-                        return  imc = peso / (altura*altura);
-                        // return imc;
-                    }                   
-
-                    function obesidade(imct){
-                        
-                       
-                        if(imct < 20)
-                        {
-                            return ("Você esta abaixo do peso!");
-                        } 
-                        else if(imct >20 && imct <= 25)
-                        {
-                            return ("Peso Ideal");
-                        }
-                        else if(imct >25 && imct <= 30)
-                        {
-                            return("Sobrepeso");
-                        }
-                        else if(imct >30 && imct <= 35)
-                        {
-                             return("Obesidade Moderada");
-                        }
-                        else if(imct >35 && imct <= 40)
-                        {
-                             return("Obesidade Severa");
-                        }
-                        else if(imct >40 && imct <= 50)
-                        {
-                             return("Obesidade Morbida");
-                        }
-                        else
-                        {
-                             return('Gordo');
-                        }
-    	
-                        
-
-                                            
-                    }
-
-                </script>
+                 </script>
 
             </section>
                     

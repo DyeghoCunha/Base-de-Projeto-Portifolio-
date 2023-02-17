@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: rgb(11, 173, 227);
 }
 
 :root{
@@ -25,12 +26,14 @@
     --corC: #bdd1d3;
     --corFundo: #030a24ad;  */
 
-    --blurFundo: 100px;
+    --blurFundo: 1px;
+    /*--corLetra: rgba(255,255,255,0.6);*/
+    --corLetra: rgb(19, 18, 18) ;
 
     --corA: rgb(8, 8, 8);
     --corB: rgb(240, 189, 6);
     --corC: rgba(242, 255, 0, 0.305);
-    --corFundo: #ff173ead;
+    --corFundo: #068da1ad;
 
     --apagaBloco = none;
 
@@ -41,7 +44,7 @@
    --fundoVidro: rgba(255,255,255,0.1);
    --bordaTL:10px solid rgba(255,255,255,0.4);
 
-   --blurVidro: 3px;
+   --blurVidro: 1px;
 
    --alturaDoVidro: 80px;
    --alturaIcone: -80vh;
@@ -49,16 +52,29 @@
 }
 
 
+.canvas{
+    
 
+    border: 1px solid rgba(255,255,255,0.4);
+    border-right: 1px solid rgba(255,255,255,0.2) ;
+    border-bottom: 1px solid rgba(255,255,255,0.2) ;
+    border-radius: 10px;
+    background: var(--fundoVidro);
+    backdrop-filter: blur(2px);
+    z-index: 0;
+    box-shadow: 0 5px 4px rgba(1, 18, 20, 0.427);
+    text-decoration: none;
+    overflow: hidden;
+}
 
 /* AQUI COMECA O FOOTER E O FUNDO */
 .corpoDaPagina{
     overflow-x:hidden;
     height: 100vh;
     width: 100vw;
-    background-image: url(./fundo5.jpg);
+     background-image: url(./wallpaper.jpg);
      
-    background-color: var(--corFundo);
+     background-color: var(--corFundo);
     
      background-repeat: no-repeat;
       right: 0; 
@@ -98,11 +114,11 @@
 .javaScript{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
     height: 80%;
     width: 90%;
-    z-index: 10;
+   
     border: 1px solid rgba(255,255,255,0.4);
     border-right: 1px solid rgba(255,255,255,0.2) ;
     border-bottom: 1px solid rgba(255,255,255,0.2) ;
@@ -110,15 +126,18 @@
     background: var(--fundoVidro);
     backdrop-filter: blur(var(--blurVidro));
     z-index: 1;
-    box-shadow: 0 5px 45px rgba(0,0, 0, 0.1);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.201);
     text-decoration: none;
     margin: 10px auto auto auto;
-    color: rgba(255,255,255,0.6);
+    color: var(--corLetra);
     padding: .5em;
     font-size: 1em;
     overflow-x:hidden;
     
 
+}
+.fa{
+    color: #ffffff;
 }
 
 .containerGlass{
@@ -143,7 +162,7 @@
     z-index:10;
     border-top: 1px solid var(--brilho);
     background: var(--fundoVidro);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(3px);
 }
 
 .containerGlass .color{
@@ -205,8 +224,8 @@
     border-right: 1px solid rgba(255,255,255,0.2) ;
     border-bottom: 1px solid rgba(255,255,255,0.2) ;
     border-radius: 10px;
-    background: var(--fundoVidro);
-    backdrop-filter: blur(4px);
+   000 background: var(--fundoVidro);
+    backdrop-filter: blur(2px);
     z-index: 1;
     box-shadow: 0 5px 45px rgba(0,0, 0, 0.1);
     text-decoration: none;
@@ -264,7 +283,7 @@
 }
 .cabecalho__nome{
     
-    color: rgba(255,255,255,0.5);
+    color: rgb(1, 50, 62);
     z-index: 3; 
 }
 .cabecalho__nome:hover{
@@ -277,6 +296,10 @@
 
     .cabecalho__nome{
         font-size: 1em;
+    }
+    .corpoDaPagina{
+
+        background-image: url(./wallpaper.jpg);
     }
 
 
